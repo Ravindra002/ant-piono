@@ -1,21 +1,9 @@
 package piona;
 
-import org.junit.Test;
-
-import static org.junit.Assert.fail;
-
 /**
  * HelloWorld class.
  */
 public class HelloWorld {
-    /**@Test
-    public void testNothing() {
-    }
-
-    @Test
-    public void testWillAlwaysFail() {
-        fail("An error message");
-    }*/
 
     /**
      * Greetings string.
@@ -39,4 +27,3 @@ public class HelloWorld {
         return greetings;
     }
 }
-
