@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto11
+  pre_build:
+    commands:
+       - echo "Clean Stage"
+       - ant -f build.xml clean
+  build:
+    commands:
+       - echo "Build Stage"
+       - ant -f build.xml
+  post_build:
+    commands:
+       - echo "Post build phase"
+artifacts:
+  files:
+    - '**/*'
+  name: java-$CODE_BUILD_NUMBER
+  discarded-paths: yes
